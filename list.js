@@ -154,7 +154,7 @@ function getS3Data(marker, html) {
 }
 
 function buildNavigation(info) {
-  var root = '<a href="?prefix=">' + 'http://http.re4son-kernel.com' + '</a> / ';
+  var root = '<a href="?prefix=">' + BUCKET_URL + '</a> / ';
   if (info.prefix) {
     var processedPathSegments = '';
     var content = $.map(info.prefix.split('/'), function(pathSegment) {
