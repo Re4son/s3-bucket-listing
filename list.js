@@ -5,7 +5,8 @@ if (typeof AUTO_TITLE != 'undefined' && AUTO_TITLE == true) {
 if (typeof S3_REGION != 'undefined') {
   //var BUCKET_URL = 'http://' + location.hostname + '.' + S3_REGION + '.amazonaws.com'; // e.g. just 's3' for us-east-1 region
   var BUCKET_URL = 'http://http.re4son-kernel.com';
-  var BUCKET_WEBSITE_URL = location.protocol + '//' + location.hostname;
+  //var BUCKET_WEBSITE_URL = location.protocol + '//' + location.hostname;
+  var BUCKET_WEBSITE_URL = BUCKET_URL
 }
 
 if (typeof S3BL_IGNORE_PATH == 'undefined' || S3BL_IGNORE_PATH != true) {
