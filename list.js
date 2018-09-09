@@ -27,6 +27,11 @@ if (typeof BUCKET_WEBSITE_URL == 'undefined') {
   var BUCKET_WEBSITE_URL = BUCKET_URL;
 }
 
+if (typeof BUCKET_WEBSITE_SHORT_URL == 'undefined') {
+  var BUCKET_WEBSITE_SHORT_URL = 'http://http.re4son-kernel.com';
+}
+
+
 if (typeof S3B_ROOT_DIR == 'undefined') {
   var S3B_ROOT_DIR = '';
 }
@@ -154,7 +159,7 @@ function getS3Data(marker, html) {
 }
 
 function buildNavigation(info) {
-  var root = '<a href="?prefix=">' + BUCKET_WEBSITE_URL + '</a> / ';
+  var root = '<a href="?prefix=">' + BUCKET_WEBSITE_SHORT_URL + '</a> / ';
   if (info.prefix) {
     var processedPathSegments = '';
     var content = $.map(info.prefix.split('/'), function(pathSegment) {
