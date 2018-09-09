@@ -28,7 +28,7 @@ if (typeof BUCKET_WEBSITE_URL == 'undefined') {
 }
 
 if (typeof BUCKET_WEBSITE_SHORT_URL == 'undefined') {
-  var BUCKET_WEBSITE_SHORT_URL = 'http://http.re4son-kernel.com';
+  var BUCKET_WEBSITE_SHORT_URL = BUCKET_WEBSITE_URL;
 }
 
 
